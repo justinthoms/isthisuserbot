@@ -1,4 +1,4 @@
-"""command: .abusehin , .abusemal"""
+"""command: .therihin , .therimal"""
 
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
@@ -8,7 +8,7 @@ import random
 import asyncio
 from userbot.utils import admin_cmd
 
-@borg.on(admin_cmd(pattern=r"habuse(.*)", outgoing=True))
+@borg.on(admin_cmd(pattern=r"theri(.*)", outgoing=True))
 async def _(event):
     if event.fwd_from:
         return
