@@ -18,7 +18,7 @@ from pySmartDL import SmartDL
 from urllib.error import HTTPError
 from os.path import exists
 
-from userbot import CMD_HELP, LOGS
+from userbot.utils import CMD_HELP, LOGS
 from userbot.events import register
 from userbot.modules.upload_download import humanbytes
 
