@@ -51,8 +51,6 @@ async def _(event):
             "`Hacking... 52%\n█████████████▒▒▒▒▒▒▒▒▒▒▒▒ `",
             "`Hacking... 84%\n█████████████████████▒▒▒▒ `",
             "`Hacking... 100%\n█████████HACKED███████████ `",
-            "`Packing Cache Of User's Data Into My Local Directory`", 
-            "`Process Completed With No Errors`",    
             "`Targeted Account Hacked...\n\nPay 69$ To` @Aid_3n `To Stay Safe..`"
             ]
 
