@@ -171,4 +171,6 @@ async def deploy_start(tgbot, message, refspec, remote):
     await message.edit("Updating and Deploying New Branch. Please wait for 5 minutes then use `.alive` to check if i'm working or not.")
     await remote.push(refspec=refspec)
     await tgbot.disconnect()
-    os.execl(sys.executable, sys.executable, *sys.argv
+    os.execl(sys.executable, sys.executable, *sys.argv)
+    
+    
