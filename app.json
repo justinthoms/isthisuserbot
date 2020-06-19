@@ -50,8 +50,12 @@
       "required": false
     },
     "PRIVATE_GROUP_ID": {
-      "description": "Private Group ID,Used For PMpermit And AFK Get Value After Deploying",
+      "description": "Get This Value By Creating A Group And Enter Chat ID (starts with -100)",
       "value": "",
+      "required": false
+    "AUTONAME": {
+      "description": "Name Used For .autoname Plugin",
+      "value": "Aid_3n",
       "required": false
     },
     "PRIVATE_GROUP_BOT_API_ID": {
