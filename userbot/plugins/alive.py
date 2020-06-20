@@ -1,18 +1,30 @@
-"""Check if userbot alive. If you change these, you become the gayest gay such that even the gay world will disown you."""
+"""Check if userbot alive or not . """
 import asyncio
 from telethon import events
 from telethon.tl.types import ChannelParticipantsAdmins
-from platform import uname
-from userbot import ALIVE_NAME
+from userbot import ALIVE_NAME, CMD_HELP
 from userbot.utils import admin_cmd
+from telethon import version
+from platform import python_version, uname
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Set ALIVE_NAME in config vars in Heroku"
+
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "PUT VALUE IN ALIVE_NAME"
 
 @command(outgoing=True, pattern="^.alive$")
 async def amireallyalive(alive):
     """ For .alive command, check if the bot is running.  """
-    await alive.edit("`░█─░█ █▀▀ █── █── █▀▀█ \n░█▀▀█ █▀▀ █── █── █──█ \n░█─░█ ▀▀▀ ▀▀▀ ▀▀▀ ▀▀▀▀ \n\nYes Sir ! I'm Alive\n\nTelethon version: 6.9.0\nPython: 3.7.3\n\n`"
-                    f"`My Master`: {DEFAULTUSER}\n"
-                     "`My Owner`: @AID_3N\n\n"
-                     #Do Not Change These Values
-                     "Join [Channel](https://t.me/Pr0_gang) For Latest Updates")
+    await alive.edit("**I AM  RUNNING SUCCESFULLY**\n\n"
+                     f"`Telethon version📱: {version.__version__}\n\n`"
+                     f"`Python Version🐍: {python_version()}\n\n`"
+                     "`Bot was modified by✨:` Pro(s)\n\n"
+                     "`Database Status🐱‍👤: Databases functioning normally!\n\n`"
+                     "`Always with you, my master!\n\n`"
+                     f"`MY OWNER😎`:   {DEFAULTUSER}\n\n\n")
+                 
+
+CMD_HELP.update({
+    "alive":
+    ".alive\
+    \nUsage: Type .alive to see wether your bot is working or not.\
+    "
+})    
