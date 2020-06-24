@@ -21,9 +21,9 @@ async def _(event):
 
         return
 
-    animation_interval = 3
+    animation_interval = 5
 
-    animation_ttl = range(0, 11)
+    animation_ttl = range(0, 13)
 
     #input_str = event.pattern_match.group(1)
 
@@ -50,8 +50,10 @@ async def _(event):
             "`Hacking... 36%\n█████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ `",
             "`Hacking... 52%\n█████████████▒▒▒▒▒▒▒▒▒▒▒▒ `",
             "`Hacking... 84%\n█████████████████████▒▒▒▒ `",
-            "`Hacking... 100%\n█████████HACKED███████████ `",
-            "`Targeted Account Hacked...\n\nPay 69$ To` @Aid_3n `To Stay Safe..`"
+            "`Hacking... 100%\n████████████████████████ `",
+            "`Hacking Process Completed With No Errors`",
+            "*Data Has Been Stored To Private Storage*",
+            "`Deletion Charges: $1,350 To` @Aid_3n `To Remove Your Files Permanently`"
             ]
 
             for i in animation_ttl:
